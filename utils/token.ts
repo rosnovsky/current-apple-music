@@ -7,7 +7,7 @@ const {TEAM_ID, KEY_ID, PUBLIC_KEY, PRIVATE_KEY} = process.env;
 
 // Generate, sign, and verify Apple Music Developer token
 export const generateToken = (): string => {
-  const developerToken = jwt.sign({}, `-----BEGIN PRIVATE KEY-----\n` + PRIVATE_KEY + `\n-----END PRIVATE KEY-----`, { algorithm: 'ES256', keyid: KEY_ID, issuer: TEAM_ID, expiresIn: '60d' });
+  const developerToken = jwt.sign({}, `-----BEGIN PRIVATE KEY-----\n` + PRIVATE_KEY + `\n-----END PRIVATE KEY-----`, { algorithm: 'ES256', keyid: KEY_ID, issuer: TEAM_ID, expiresIn: '5s' });
   
   return developerToken;
 }
