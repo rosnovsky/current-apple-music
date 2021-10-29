@@ -1,0 +1,47 @@
+{
+  "name": "current-apple-music",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Apple Music Playing now for Github profile (and more)",
+  "author": "Art Rosnovsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rosnovsky/current-apple-music/issues"
+  },
+  "homepage": "https://github.com/rosnovsky/current-apple-music#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosnovsky/current-apple-music.git"
+  },
+  "keywords": [
+    "apple",
+    "apple music",
+    "github profile"
+  ],
+  "type": "module",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vercel/node": "^1.7.2",
+    "husky": "^7.0.4",
+    "isomorphic-unfetch": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^3.0.0",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
