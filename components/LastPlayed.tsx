@@ -14,7 +14,7 @@ export const Player: React.FC<Props> = ({
   artist,
 }) => {
   return (
-    <ReadmeImg width="540" height="64">
+    <ReadmeImg width="300" height="64">
       <style>
         {`
             img:not([src]) {
